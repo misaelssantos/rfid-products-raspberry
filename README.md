@@ -5,7 +5,36 @@ Configurações para o servidor raspberry
 
 * Verificar todos os pré-requisitos dos projetos (git, node, python3...)
 
-# Script de inicialização dos serviços (start.sh)
+# Mosquitto
+
+## Instalação do Mosquitto e Client
+
+```shell
+sudo apt update
+sudo apt install -y mosquitto mosquitto-clients
+sudo systemctl enable mosquitto.service
+```
+
+## Configuração de usuário e senha
+
+
+```
+mosquitto_passwd -c passwordfile compras
+# copiar para local seguro
+```
+
+Editar o arquivo `/etc/mosquitto/mosquitto.conf` informando o arquivo de senhas.
+
+```
+password_file /pathto/passwordfile
+```
+
+Fonte: http://www.steves-internet-guide.com/mqtt-username-password-example/
+
+
+# Aplicação
+
+## Script de inicialização dos serviços de aplicação (start.sh)
 
 ```bash
 #!/bin/bash
