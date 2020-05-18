@@ -1,0 +1,1100 @@
+[
+    {
+        "id": "6fe53b98.f9f494",
+        "type": "tab",
+        "label": "Dashboard Flow",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f8d6626b.c6c3e",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "be8136ea.b61b88",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "RFID",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "mqtt",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "1375d4ec.cd64bb",
+        "type": "ui_group",
+        "z": "",
+        "name": "Painel",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "2a833789.8d8d98",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "534035ed.fa7abc",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Compras",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ba2d0932.d14378",
+        "type": "ui_group",
+        "z": "",
+        "name": "Configurações",
+        "tab": "534035ed.fa7abc",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "2177f0d0.0f523",
+        "type": "ui_group",
+        "z": "",
+        "name": "Produtos",
+        "tab": "534035ed.fa7abc",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a4a5380a.3c6fe8",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "21087379.00cbdc",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2177f0d0.0f523",
+        "order": 2,
+        "width": "1",
+        "height": 1
+    },
+    {
+        "id": "df2b7791.957af8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2177f0d0.0f523",
+        "order": 4,
+        "width": "1",
+        "height": 1
+    },
+    {
+        "id": "123623e4.5b4dbc",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2177f0d0.0f523",
+        "order": 6,
+        "width": "1",
+        "height": 1
+    },
+    {
+        "id": "9a74b092.1fb05",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2177f0d0.0f523",
+        "order": 8,
+        "width": "1",
+        "height": 1
+    },
+    {
+        "id": "6f46915e.63f8d",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ea57c47.28e4338",
+        "order": 2,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "3898f144.001bbe",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ea57c47.28e4338",
+        "order": 4,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "acf001d1.950d7",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2177f0d0.0f523",
+        "order": 10,
+        "width": "1",
+        "height": 1
+    },
+    {
+        "id": "6c7b9863.194f68",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ea57c47.28e4338",
+        "order": 8,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "c0ec465e.e7dc68",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ea57c47.28e4338",
+        "order": 8,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "e0b62e58.d4f03",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ea57c47.28e4338",
+        "order": 6,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "1a600e75.5a8cb2",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "",
+        "order": 4,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "1eaa6c7c.5a09a4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "",
+        "order": 2,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "e95126e7.0c4ec8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2177f0d0.0f523",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8d878334.cd015",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2177f0d0.0f523",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c361fb60.77f538",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2177f0d0.0f523",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1af3d4e6.2a7c7b",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2177f0d0.0f523",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8785f19d.3c907",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2177f0d0.0f523",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "df44c90a.f133b8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2177f0d0.0f523",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f86fb38e.6278b",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2177f0d0.0f523",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "68c78a15.4bc534",
+        "type": "ui_group",
+        "z": "",
+        "name": "Ações",
+        "tab": "534035ed.fa7abc",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fa3d7c7e.7adee",
+        "type": "ui_switch",
+        "z": "6fe53b98.f9f494",
+        "name": "ToogleMode",
+        "label": "Repondo Estoque",
+        "tooltip": "",
+        "group": "ba2d0932.d14378",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 510,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1238373a.b934f9",
+        "type": "ui_gauge",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "2177f0d0.0f523",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Frutas",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#6eca38"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 530,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "b641b86a.69cc28",
+        "type": "ui_gauge",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "2177f0d0.0f523",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Cerveja",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#6eca38"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 540,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "b2770af6.2f79f8",
+        "type": "ui_gauge",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "2177f0d0.0f523",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Ovos",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#6eca38"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 530,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "d2205be3.11f698",
+        "type": "ui_gauge",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "2177f0d0.0f523",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Achocolatado",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#6eca38"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 560,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "bc7b0b18.e92468",
+        "type": "ui_gauge",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "2177f0d0.0f523",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Açucar",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#6eca38"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 540,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "dcf88a6d.f4be78",
+        "type": "ui_gauge",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "2177f0d0.0f523",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Biscoito",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#6eca38"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 540,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "6d3a78b8.2ab918",
+        "type": "ui_gauge",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "2177f0d0.0f523",
+        "order": 17,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Café",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#6eca38"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 530,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "ce981301.6c17d",
+        "type": "ui_gauge",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "2177f0d0.0f523",
+        "order": 21,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Carnes",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#6eca38"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 540,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "24681b53.d99704",
+        "type": "ui_gauge",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "2177f0d0.0f523",
+        "order": 19,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Detergente",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#6eca38"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 550,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "57dfede9.f781d4",
+        "type": "ui_gauge",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "2177f0d0.0f523",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Leite",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#6eca38"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 530,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "fb0f86ff.8102b8",
+        "type": "ui_gauge",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "2177f0d0.0f523",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Pão",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#6eca38"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 530,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "c0e8cbac.fbdc88",
+        "type": "ui_gauge",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "2177f0d0.0f523",
+        "order": 23,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Queijo",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#6eca38"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 530,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "c3f8453e.3bb568",
+        "type": "ui_button",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "68c78a15.4bc534",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Repor Tudo",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "settings_backup_restore",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "5005da06.cc9014"
+            ]
+        ]
+    },
+    {
+        "id": "5005da06.cc9014",
+        "type": "exec",
+        "z": "6fe53b98.f9f494",
+        "command": "bash /home/pi/reset-db.sh",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Script Reset Topics",
+        "x": 430,
+        "y": 220,
+        "wires": [
+            [
+                "1f26ddb4.a15ce2"
+            ],
+            [],
+            [
+                "ab55c688.28ccc8"
+            ]
+        ]
+    },
+    {
+        "id": "1f26ddb4.a15ce2",
+        "type": "debug",
+        "z": "6fe53b98.f9f494",
+        "name": "OutputLog",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 729,
+        "y": 208,
+        "wires": []
+    },
+    {
+        "id": "f472a87c.505118",
+        "type": "mqtt out",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "true",
+        "broker": "be8136ea.b61b88",
+        "x": 410,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "c82a1ae1.0dd908",
+        "type": "ui_button",
+        "z": "6fe53b98.f9f494",
+        "name": "Reposicao",
+        "group": "ba2d0932.d14378",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Modo Reposição",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "local_grocery_store",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "/compras/devices/config/mode",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "f472a87c.505118"
+            ]
+        ]
+    },
+    {
+        "id": "e30710a5.69cac",
+        "type": "ui_button",
+        "z": "6fe53b98.f9f494",
+        "name": "ModoPadrao",
+        "group": "ba2d0932.d14378",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Modo Padrão",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "done",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "/compras/devices/config/mode",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "f472a87c.505118",
+                "79a2521a.9c19ac"
+            ]
+        ]
+    },
+    {
+        "id": "79a2521a.9c19ac",
+        "type": "ui_audio",
+        "z": "6fe53b98.f9f494",
+        "name": "Audio",
+        "group": "68c78a15.4bc534",
+        "voice": "pt-BR",
+        "always": true,
+        "x": 410,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "1cba2e61.9879b2",
+        "type": "mqtt in",
+        "z": "6fe53b98.f9f494",
+        "name": "Tags",
+        "topic": "/compras/devices/#",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "be8136ea.b61b88",
+        "x": 110,
+        "y": 520,
+        "wires": [
+            [
+                "85394496.bae8d8"
+            ]
+        ]
+    },
+    {
+        "id": "85394496.bae8d8",
+        "type": "switch",
+        "z": "6fe53b98.f9f494",
+        "name": "Switch",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "mode",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "frutas",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "cerveja",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "ovo",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "achocolatado",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "acucar",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "biscoito",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "carnes",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "cafe",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "/compras/devices/esp32/leitepo",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "detergente",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "/compras/devices/esp32/leite",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "pao",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "queijo",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 14,
+        "x": 270,
+        "y": 740,
+        "wires": [
+            [
+                "fa3d7c7e.7adee"
+            ],
+            [
+                "1238373a.b934f9"
+            ],
+            [
+                "b641b86a.69cc28"
+            ],
+            [
+                "b2770af6.2f79f8"
+            ],
+            [
+                "d2205be3.11f698"
+            ],
+            [
+                "bc7b0b18.e92468"
+            ],
+            [
+                "dcf88a6d.f4be78"
+            ],
+            [
+                "ce981301.6c17d"
+            ],
+            [
+                "6d3a78b8.2ab918"
+            ],
+            [
+                "37772bb3.682a04"
+            ],
+            [
+                "24681b53.d99704"
+            ],
+            [
+                "57dfede9.f781d4"
+            ],
+            [
+                "fb0f86ff.8102b8"
+            ],
+            [
+                "c0e8cbac.fbdc88"
+            ]
+        ]
+    },
+    {
+        "id": "d48ec420.1f97b8",
+        "type": "ui_toast",
+        "z": "6fe53b98.f9f494",
+        "position": "top right",
+        "displayTime": "5",
+        "highlight": "highlight",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "Comando executado!",
+        "name": "MsgOutput",
+        "x": 910,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "539bf081.730ed",
+        "type": "ui_button",
+        "z": "6fe53b98.f9f494",
+        "name": "TesteCerveja",
+        "group": "68c78a15.4bc534",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Teste Cerveja",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "/compras/devices/esp32/cerveja",
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "f472a87c.505118"
+            ]
+        ]
+    },
+    {
+        "id": "37772bb3.682a04",
+        "type": "ui_gauge",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "group": "2177f0d0.0f523",
+        "order": 25,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Leite em Pó",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b50000",
+            "#e6e600",
+            "#6eca38"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 550,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "ab55c688.28ccc8",
+        "type": "json",
+        "z": "6fe53b98.f9f494",
+        "name": "Code",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 710,
+        "y": 320,
+        "wires": [
+            [
+                "d48ec420.1f97b8",
+                "51914a6b.1a6464"
+            ]
+        ]
+    },
+    {
+        "id": "51914a6b.1a6464",
+        "type": "debug",
+        "z": "6fe53b98.f9f494",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 890,
+        "y": 360,
+        "wires": []
+    }
+]
