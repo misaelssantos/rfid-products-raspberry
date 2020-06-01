@@ -742,7 +742,7 @@
         "name": "",
         "topic": "",
         "qos": "",
-        "retain": "true",
+        "retain": "false",
         "broker": "a3a7de06.2a331",
         "x": 410,
         "y": 140,
